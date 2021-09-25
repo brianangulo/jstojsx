@@ -1,6 +1,6 @@
 {
-  "name": "toadjstotsx",
-  "version": "1.0.0",
+  "name": "jstotsx",
+  "version": "1.0.6",
   "description": "Renames Js files into Ts",
   "main": "lib/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "lib": "lib"
   },
   "bin": {
-    "toadtsx": "./lib/cli.js"
+    "jstotsx": "./lib/cli.js"
   },
   "author": "Brian Angulo",
   "license": "ISC",
