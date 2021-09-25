@@ -2,12 +2,14 @@ import { readdirSync, rename } from "fs";
 import { cwd } from "process";
 
 //find all files in current directory with .baml extensions
+//TODO: lean out finder function to only extract files
+//TODO: remove js hardcoded
 const findAllJslFiles = () => {
   const currentDir = cwd();
   const allFilesInDir = readdirSync(currentDir);
   const filterJs = allFilesInDir.filter((file) => {
     const splitFile = file.split(".");
-    if (splitFile[splitFile.length - 1] === "js" || "jsx") return true;
+    if (splitFile[splitFile.length - 1] === "js") return true;
     else return false;
   });
   //if there are no baml in current dir rtrn false
